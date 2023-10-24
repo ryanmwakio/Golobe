@@ -55,10 +55,6 @@ import PrimaryInput from "@/shared/PrimaryInput.vue";
       </div>
     </div>
   </section>
-
-  <section class="places my-40">
-    <main class="container"></main>
-  </section>
 </template>
 
 <style lang="scss" scoped>
@@ -122,7 +118,7 @@ import PrimaryInput from "@/shared/PrimaryInput.vue";
     flex-direction: row;
 
     button {
-      @apply flex flex-row align-middle justify-center  py-3 px-4 gap-2 text-xs;
+      @apply flex flex-row align-middle justify-center  py-3 px-4 gap-2 text-xs rounded-md;
       align-items: center;
 
       img {
