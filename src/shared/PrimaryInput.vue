@@ -1,12 +1,13 @@
 <script setup>
 import { defineProps } from "vue";
 
-const props = defineProps(["label", "placeholder"]);
+const props = defineProps(["label", "placeholder", "icon"]);
 </script>
 
 <template>
   <div class="input-group">
     <input type="text" :placeholder="placeholder" />
+    <span v-if="icon" class="icon"><img :src="`../${icon}`" alt="" /></span>
     <label for="">{{ props.label }}</label>
   </div>
 </template>
@@ -15,11 +16,19 @@ const props = defineProps(["label", "placeholder"]);
 .input-group {
   @apply relative;
   input {
-    @apply border border-slate-700  py-4 px-4 rounded-md text-xs;
+    @apply border border-slate-700  py-4 px-4 rounded-md text-xs w-full;
 
     &:focus,
     &:active {
       @apply border  outline-none shadow shadow-lg;
+    }
+  }
+
+  .icon {
+    @apply absolute bg-white w-10 h-4 flex justify-center items-center overflow-hidden right-1;
+    top: 35%;
+    & img {
+      @apply w-4 h-4;
     }
   }
 

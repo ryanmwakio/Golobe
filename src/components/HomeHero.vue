@@ -4,8 +4,13 @@ import PrimaryInput from "@/shared/PrimaryInput.vue";
 </script>
 
 <template>
-  <section class="hero-section" style="background: url(/hero.jpg)">
-    <div class="z-20">
+  <section
+    class="hero-section"
+    style="
+      background: url(https://images.unsplash.com/photo-1607309843659-f4ad95cf3277?auto=format&fit=crop&q=80&w=1471&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    "
+  >
+    <div class="z-20 -mt-10">
       <h4 class="sub-text">Helping Others</h4>
       <h1 class="main-text">Live & Travel</h1>
       <h6 class="description">Special offers to suit your plan</h6>
@@ -23,19 +28,32 @@ import PrimaryInput from "@/shared/PrimaryInput.vue";
 
       <div class="inputs-row">
         <div class="form-section">
-          <primary-input label="From - To" placeholder="Nairobi - Mombasa"></primary-input>
+          <primary-input
+            label="From - To"
+            placeholder="Nairobi - Mombasa"
+            icon="input-to-from.svg"
+          ></primary-input>
         </div>
         <div class="form-section">
-          <primary-input label="Trip" placeholder="Return"></primary-input>
+          <primary-input
+            label="Trip"
+            placeholder="Return"
+            icon="input-dropdown.svg"
+          ></primary-input>
         </div>
         <div class="form-section">
           <primary-input
             label="Departure Return"
             placeholder="07 Nov 2023 - 13 Nov 2023"
+            :icon="null"
           ></primary-input>
         </div>
         <div class="form-section">
-          <primary-input label="Passenger Class" placeholder="1 Passenger Economy"></primary-input>
+          <primary-input
+            label="Passenger Class"
+            placeholder="1 Passenger Economy"
+            :icon="null"
+          ></primary-input>
         </div>
       </div>
 
@@ -59,8 +77,8 @@ import PrimaryInput from "@/shared/PrimaryInput.vue";
 
 <style lang="scss" scoped>
 .hero-section {
-  @apply p-6 container mx-auto rounded-xl relative flex align-middle justify-center mt-5;
-  height: 90vh;
+  @apply p-6 container mx-auto relative flex align-middle justify-center rounded-br-xl rounded-bl-xl;
+  height: 70vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -79,11 +97,11 @@ import PrimaryInput from "@/shared/PrimaryInput.vue";
     @apply font-normal text-base tracking-wider text-center text-white;
   }
   .overlay {
-    @apply absolute inset-0 bg-black opacity-20 z-10 rounded-xl;
+    @apply absolute inset-0 bg-black opacity-10 z-10 rounded-br-xl rounded-bl-xl;
   }
 
   .search-card {
-    @apply bg-white px-7 py-5 w-11/12 absolute -bottom-20 z-20 rounded-xl shadow shadow-lg;
+    @apply bg-white px-7 py-5 w-11/12 absolute -bottom-28 z-20 rounded-xl shadow-lg;
 
     .form-section {
       @apply bg-white w-full p-3 mt-5;
