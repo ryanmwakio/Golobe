@@ -118,9 +118,31 @@ const items = reactive([
 </script>
 
 <template>
-  <div></div>
-  <div class="bg-mint-green">
-    <div class="container mx-auto w-full justify-between pt-40 pb-14 flex items-start">
+  <div class="rounded-xl container mx-auto flex justify-between mb-20" style="background: #cdeae1">
+    <div class="pl-10 py-8">
+      <h1 class="w-3 font-semibold text-4xl text-blackish-green mb-4">Subscribe Newsletter</h1>
+      <h3 class="text-blackish-green font-medium text-xl">The Travel</h3>
+      <p class="text-slate-700 text-xs my-4">
+        Get inspired! Receive travel discounts, tips and behind the scenes stories.
+      </p>
+
+      <div class="flex justify-between gap-2">
+        <input
+          type="text"
+          placeholder="Your email address"
+          class="bg-white text-black text-xs py-3 px-4 rounded-md w-full active:outline-none focus:outline-none"
+        />
+        <button class="bg-blackish-green text-white py-3 px-4 text-xs rounded-md">Subscribe</button>
+      </div>
+    </div>
+    <div>
+      <div>
+        <img src="../assets/mailbox.svg" alt="" class="mr-10" />
+      </div>
+    </div>
+  </div>
+  <div class="bg-mint-green" style="z-index: 10 !important">
+    <div class="container mx-auto w-full justify-between pt-14 pb-14 flex items-start">
       <div>
         <router-link to="/">
           <img class="w-20 mb-5" src="../assets/footer-logo.svg" alt="" />
