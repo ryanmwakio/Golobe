@@ -12,8 +12,8 @@ const props = defineProps(["title", "text", "btnText", "image"]);
     :style="{ 'background-image': 'url(' + image + ')' }"
   >
     <div class="z-50 w-3/4 mx-auto flex justify-center items-center flex-col text-center">
-      <h1 class="text-4xl font-semibold text-white tracking-wider">{{ title }}</h1>
-      <p class="text-white font-normal text-sm my-3">
+      <h1 class="text-xl md:text-4xl font-semibold text-white tracking-wider">{{ title }}</h1>
+      <p class="text-white font-normal text-xs md:text-sm my-3">
         {{ text }}
       </p>
       <primary-button :text="btnText"></primary-button>

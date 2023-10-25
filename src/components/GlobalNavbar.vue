@@ -4,7 +4,7 @@ import { RouterLink } from "vue-router";
 
 <template>
   <section class="w-full bg-mint-green p-4 container mx-auto rounded-tr-xl rounded-tl-xl mt-3">
-    <div class="container w-full mx-auto flex justify-between p-3">
+    <div class="container w-full mx-auto md:flex justify-between p-3 hidden">
       <div class="flex justify-start items-center gap-4">
         <router-link to="/" class="text-xs text-white flex gap-2"
           ><img src="../assets/airplane-white.svg" alt="" class="inline w-5" />Find

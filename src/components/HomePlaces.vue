@@ -79,7 +79,7 @@ let places = reactive([
       btnTitle="See more places"
     ></section-title-subtitle>
 
-    <div class="grid grid-cols-3 gap-6 container w-11/12 mx-auto my-10">
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-6 container w-11/12 mx-auto my-10">
       <home-place-card
         v-for="place in places"
         :key="place.id"

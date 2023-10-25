@@ -24,7 +24,7 @@ let services = reactive([
 
 <template>
   <div class="container mx-auto mb-20">
-    <div class="grid grid-cols-2 gap-6 container mx-auto w-11/12">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 container mx-auto w-11/12">
       <card-overlay
         v-for="service in services"
         :key="service.id"

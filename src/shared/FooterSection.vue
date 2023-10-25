@@ -119,7 +119,7 @@ const items = reactive([
 
 <template>
   <div class="rounded-xl container mx-auto flex justify-between mb-20" style="background: #cdeae1">
-    <div class="pl-10 py-8">
+    <div class="pl-10 py-8 pr-10 md:pr-0">
       <h1 class="w-3 font-semibold text-4xl text-blackish-green mb-4">Subscribe Newsletter</h1>
       <h3 class="text-blackish-green font-medium text-xl">The Travel</h3>
       <p class="text-slate-700 text-xs my-4">
@@ -135,19 +135,21 @@ const items = reactive([
         <button class="bg-blackish-green text-white py-3 px-4 text-xs rounded-md">Subscribe</button>
       </div>
     </div>
-    <div>
+    <div class="hidden md:block">
       <div>
         <img src="../assets/mailbox.svg" alt="" class="mr-10" />
       </div>
     </div>
   </div>
   <div class="bg-mint-green" style="z-index: 10 !important">
-    <div class="container mx-auto w-full justify-between pt-14 pb-14 flex items-start">
+    <div
+      class="container mx-auto w-full justify-between pt-14 pb-14 flex items-center md:items-start md:flex-row flex-col"
+    >
       <div>
-        <router-link to="/">
+        <router-link to="/" class="mb-3">
           <img class="w-20 mb-5" src="../assets/footer-logo.svg" alt="" />
         </router-link>
-        <div class="flex gap-3">
+        <div class="flex gap-3 mb-3">
           <a href="http://" target="_blank" rel="noopener noreferrer">
             <img class="w-4" src="../assets/footer-facebook.svg" alt="" />
           </a>

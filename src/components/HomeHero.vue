@@ -86,22 +86,22 @@ import PrimaryInput from "@/shared/PrimaryInput.vue";
   background-position: center;
 
   .sub-text {
-    @apply text-center text-white tracking-wider text-4xl z-10;
+    @apply text-center text-white tracking-wide md:tracking-wider text-xl md:text-4xl z-10;
   }
 
   .main-text {
-    @apply font-semibold text-6xl uppercase text-center text-white tracking-wider;
+    @apply font-semibold text-4xl md:text-6xl uppercase text-center text-white tracking-wider;
   }
 
   .description {
-    @apply font-normal text-base tracking-wider text-center text-white;
+    @apply font-normal text-sm md:text-base tracking-wider text-center text-white;
   }
   .overlay {
     @apply absolute inset-0 bg-black opacity-10 z-10 rounded-br-xl rounded-bl-xl;
   }
 
   .search-card {
-    @apply bg-white px-7 py-5 w-11/12 absolute -bottom-28 z-20 rounded-xl shadow-lg;
+    @apply bg-white px-7 py-5 w-11/12 absolute -bottom-80 md:-bottom-28 z-20 rounded-xl shadow-lg;
 
     .form-section {
       @apply bg-white w-full p-3 mt-5;
@@ -112,7 +112,7 @@ import PrimaryInput from "@/shared/PrimaryInput.vue";
     @apply flex flex-row gap-5;
 
     & a {
-      @apply flex flex-row gap-2 text-sm font-semibold text-blackish-green;
+      @apply flex flex-row gap-2 text-xs md:text-sm font-semibold text-blackish-green;
     }
 
     .divider {
@@ -126,7 +126,7 @@ import PrimaryInput from "@/shared/PrimaryInput.vue";
   }
 
   .inputs-row {
-    @apply flex flex-row  content-between;
+    @apply md:flex md:flex-row  md:content-between;
   }
 
   .buttons-row {
