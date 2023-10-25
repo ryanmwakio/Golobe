@@ -66,7 +66,7 @@ import PrimaryInput from "@/shared/PrimaryInput.vue";
         <div class="btn-group">
           <div>
             <button class="bg-mint-green">
-              <img src="../assets/Paper-plane.svg" /> Show Flights
+              <img src="../assets/Paper-Plane.svg" /> Show Flights
             </button>
           </div>
         </div>
