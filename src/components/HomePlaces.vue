@@ -73,7 +73,11 @@ let places = reactive([
 
 <template>
   <section class="places mt-40 mb-20 container mx-auto">
-    <section-title-subtitle></section-title-subtitle>
+    <section-title-subtitle
+      title="Plan your perfect trip"
+      description="Search Flights & Places Hire to our most popular destinations"
+      btnTitle="See more places"
+    ></section-title-subtitle>
 
     <div class="grid grid-cols-3 gap-6 container w-11/12 mx-auto my-10">
       <home-place-card
