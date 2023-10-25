@@ -72,7 +72,7 @@ let places = reactive([
 </script>
 
 <template>
-  <section class="places my-40 container mx-auto">
+  <section class="places mt-40 mb-20 container mx-auto">
     <section-title-subtitle></section-title-subtitle>
 
     <div class="grid grid-cols-3 gap-6 container w-11/12 mx-auto my-10">
